@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using Ping;
 
+
+
 public class Program
 {
   public static void Main()
@@ -9,8 +11,8 @@ public class Program
     Console.WriteLine("Enter a number: ");
     string stringUserInput = Console.ReadLine();
     int userInput = int.Parse(stringUserInput);
-
-    List<string> PingList = new List<string> { "ping", "pong", "pingpong"};
+  
+    List<string> PingList = PingPong.MakePingPong(userInput);
     
 
     foreach (string turn in PingList)
